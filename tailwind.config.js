@@ -8,10 +8,10 @@ export default {
         btnBg: "#036ab5",
         bgColor: "#f2f4f6",
         primary: "#000000",
-        secondary: "#6a737d",
+        secondary: "#c5cad1",
       },
       fontFamily: {
-        pop: ["Popins", "sans-serif"],
+        pop: ["Poppins", "sans-serif"],
       },
     },
   },
