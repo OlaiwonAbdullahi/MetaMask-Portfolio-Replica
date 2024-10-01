@@ -1,7 +1,10 @@
-import React from "react";
-
 const Search = () => {
-  return <div>Search</div>;
+  return (
+    <div className="rounded-md">
+      <div className=""></div>
+      <input type="text" placeholder="Search For a token" />
+    </div>
+  );
 };
 
 export default Search;
