@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Search from "../Search";
 
 const NavBar = () => {
   return (
@@ -6,7 +7,8 @@ const NavBar = () => {
       <div className="">
         <h2 className="text-2xl font-bold mt-3">Tokens</h2>
       </div>
-      <div className="">
+      <div className=" flex gap-3 p-1">
+        <Search />
         <Button />
       </div>
     </div>
