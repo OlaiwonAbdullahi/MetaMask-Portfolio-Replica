@@ -1,3 +1,5 @@
+import { RiGasStationFill } from "react-icons/ri";
+import { IoMdNotificationsOutline } from "react-icons/io";
 import Button from "../Button";
 import Search from "../Search";
 
@@ -9,6 +11,14 @@ const NavBar = () => {
       </div>
       <div className=" flex gap-3 p-1">
         <Search />
+        <div className="flex items-center hover:text-btnBg hover:bg-secondary h-10 p-2 hover:rounded-md transition-all duration-300 ease-in-out">
+          <RiGasStationFill className="h-6" />
+          <span className="text-sm ml-1">18</span>
+        </div>
+        <div className="h-10 hover:h-8 hover:text-btnBg hover:bg-secondary hover:rounded-md p-2 transition-all duration-300 ease-in-out">
+          <IoMdNotificationsOutline className="h-6" />
+        </div>
+
         <Button />
       </div>
     </div>
