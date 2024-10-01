@@ -11,7 +11,7 @@ export default {
         secondary: "#6a737d",
       },
       fontFamily: {
-        euclid: ["Euclid Circlular", "sans-serif"],
+        pop: ["Popins", "sans-serif"],
       },
     },
   },
