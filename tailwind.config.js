@@ -2,7 +2,18 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: "transparent",
+        btnBg: "#036ab5",
+        bgColor: "#f2f4f6",
+        primary: "#000000",
+        secondary: "#6a737d",
+      },
+      fontFamily: {
+        euclid: ["Euclid Circlular", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
