@@ -1,6 +1,7 @@
 import SideBar from "../components/Navigations/SideBar";
 import Header from "../components/Navigations/Header";
 import Hero from "../components/Hero";
+import Feature from "../components/Feature";
 
 const Overview = () => {
   return (
@@ -12,6 +13,7 @@ const Overview = () => {
       <div className="basis-3/4 md:basis-5/6">
         <Header />
         <Hero />
+        <Feature />
       </div>
     </div>
   );
