@@ -8,7 +8,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Search For a token"
-        className="bg-bgColor text-base text-primary placeholder:text-primary placeholder:text-sm"
+        className="bg-bgColor text-base text-primary placeholder:text-primary placeholder:text-sm focus:outline-none p-2"
       />
     </div>
   );
