@@ -5,16 +5,16 @@ import { PiJoystickLight } from "react-icons/pi";
 import { LiaHubspot } from "react-icons/lia";
 import { BsGrid1X2 } from "react-icons/bs";
 import { CgGenderMale } from "react-icons/cg";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const SideBar = () => {
   return (
     <div className="p-4 bg-white w-48 sticky top-0 h-screen flex flex-col justify-between">
-      {/* Logo Section */}
       <div className="mb-8">
         <Logo />
       </div>
 
-      {/* Sidebar Links */}
       <div className="flex flex-col gap-4">
         <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
           <BsGrid1X2 className="text-xl" />
@@ -23,7 +23,9 @@ const SideBar = () => {
 
         <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
           <CgGenderMale className="text-xl" />
-          <span className="whitespace-nowrap">Move Crypto</span>
+          <span className="whitespace-nowrap flex ">
+            Move Crypto <MdOutlineKeyboardArrowRight className=" mt-1" />
+          </span>
         </div>
 
         <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
@@ -47,10 +49,12 @@ const SideBar = () => {
         </div>
       </div>
 
-      {/* Divider Section */}
       <div>
         <hr className="border-gray-300 mb-4" />
-        {/* You can add additional footer links or content here in the future */}
+
+        <span className="flex p-2 gap-2 text-sm text-text">
+          Terms of Use <HiMiniArrowTopRightOnSquare className="mt-1" />
+        </span>
       </div>
     </div>
   );
