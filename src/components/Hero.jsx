@@ -1,24 +1,17 @@
 import heroimg1 from "../assets/heroimg1.webp";
 import heroimg2 from "../assets/heroimg2.webp";
+import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
-    <div className=" flex justify-between">
+    <div className=" flex justify-between bg-bgColor">
       <div>
-        <img src={heroimg1} alt="" />
+        <img src={heroimg1} alt="" className=" h-screen w-64" />
       </div>
       <div className="">
-        <div className="">
-          <h2>Get started with MetaMask Portfolio</h2>
-          <p>
-            Get a clear, comprehensive view of your accounts and wallets, across
-            all networks. Connect a MetaMask wallet or watch any Ethereum
-            address.
-          </p>
-        </div>
-        <div className=""></div>
+        <HeroContent />
       </div>
       <div className="">
-        <img src={heroimg2} alt="" />
+        <img src={heroimg2} alt="" className=" h-screen w-64" />
       </div>
     </div>
   );
