@@ -7,6 +7,7 @@ import { BsGrid1X2 } from "react-icons/bs";
 import { CgGenderMale } from "react-icons/cg";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -16,11 +17,12 @@ const SideBar = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
-          <BsGrid1X2 className="text-xl" />
-          <span>Overview</span>
-        </div>
-
+        <Link to="/error">
+          <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
+            <BsGrid1X2 className="text-xl" />
+            <span>Overview</span>
+          </div>
+        </Link>
         <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
           <CgGenderMale className="text-xl" />
           <span className="whitespace-nowrap flex ">
