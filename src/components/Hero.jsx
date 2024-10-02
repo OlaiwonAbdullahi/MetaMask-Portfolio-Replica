@@ -3,7 +3,7 @@ import heroimg2 from "../assets/heroimg2.jpg";
 import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
-    <div className=" flex justify-between bg-bgColor">
+    <div className=" flex justify-between bg-bgColor pb-10">
       <div>
         <img src={heroimg1} alt="" className=" h-screen w-64" />
       </div>

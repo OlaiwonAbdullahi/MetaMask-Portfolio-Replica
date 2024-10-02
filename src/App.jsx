@@ -5,7 +5,7 @@ import Error from "./pages/404";
 
 export default function App() {
   return (
-    <div className=" font-pop ">
+    <div className=" font-pop bg-white">
       <Router>
         <Routes>
           <Route path="/" element={<Overview />} />
