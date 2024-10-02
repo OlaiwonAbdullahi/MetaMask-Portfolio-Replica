@@ -5,7 +5,7 @@ import SideBar from "./components/Navigations/SideBar";
 export default function App() {
   return (
     <div className=" ">
-      <div className=" text-4xl text-center font-pop ">
+      <div className=" font-pop ">
         <Header />
         <NavBar />
         <SideBar />
