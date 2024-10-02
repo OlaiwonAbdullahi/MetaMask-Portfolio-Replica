@@ -7,7 +7,7 @@ const Header = () => {
         <h2 className="text-2xl font-bold mt-3">Dashboard</h2>
       </div>
       <div className="">
-        <Button />
+        <Button>Connect MetaMask</Button>
       </div>
     </div>
   );

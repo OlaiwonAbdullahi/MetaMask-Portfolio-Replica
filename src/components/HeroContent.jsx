@@ -14,7 +14,7 @@ const HeroContent = () => {
       </div>
       <div className="flex mt-6 space-x-4">
         <Button />
-        <Button />
+        <Button>Connect MetaMask</Button>
       </div>
     </div>
   );

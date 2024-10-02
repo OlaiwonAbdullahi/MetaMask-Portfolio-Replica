@@ -1,5 +1,5 @@
-import heroimg1 from "../assets/heroimg1.webp";
-import heroimg2 from "../assets/heroimg2.webp";
+import heroimg1 from "../assets/heroimg1.jpg";
+import heroimg2 from "../assets/heroimg2.jpg";
 import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
