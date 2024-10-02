@@ -8,20 +8,18 @@ import { CgGenderMale } from "react-icons/cg";
 
 const SideBar = () => {
   return (
-    <div className="p-4">
-      {/* Logo */}
+    <div className="p-4 bg-white">
       <div className="mb-8">
         <Logo />
       </div>
 
-      {/* Sidebar Items */}
       <div className="flex flex-col gap-6">
         <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
           <BsGrid1X2 className="text-xl" />
           <span>Overview</span>
         </div>
 
-        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+        <div className="flex gap-3 items-center text-text hover:bg-bgColor  transition-all duration-300 cursor-pointer">
           <CgGenderMale className="text-xl" />
           <span className="whitespace-nowrap">Move Crypto</span>
         </div>
