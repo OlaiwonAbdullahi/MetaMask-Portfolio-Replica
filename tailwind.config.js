@@ -9,6 +9,7 @@ export default {
         bgColor: "#f2f4f6",
         primary: "#000000",
         secondary: "#c5cad1",
+        text: "#89919c",
       },
       fontFamily: {
         pop: ["Poppins", "sans-serif"],

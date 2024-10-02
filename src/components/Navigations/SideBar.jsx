@@ -1,37 +1,48 @@
-import { BiGridHorizontal } from "react-icons/bi";
 import Logo from "../logo.jsx";
 import { RiNftFill } from "react-icons/ri";
 import { MdOutlineStars } from "react-icons/md";
 import { PiJoystickLight } from "react-icons/pi";
 import { LiaHubspot } from "react-icons/lia";
 import { BsGrid1X2 } from "react-icons/bs";
+import { CgGenderMale } from "react-icons/cg";
 
 const SideBar = () => {
   return (
-    <div>
-      <div className="">
+    <div className="p-4">
+      {/* Logo */}
+      <div className="mb-8">
         <Logo />
       </div>
-      <div className=" justify-start flex flex-col">
-        <div className="">
-          <BsGrid1X2 />
-          <span>OverView</span>
+
+      {/* Sidebar Items */}
+      <div className="flex flex-col gap-6">
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <BsGrid1X2 className="text-xl" />
+          <span>Overview</span>
         </div>
-        <BiGridHorizontal />
-        <div className="">
-          <RiNftFill />
-          NFTs
+
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <CgGenderMale className="text-xl" />
+          <span className="whitespace-nowrap">Move Crypto</span>
         </div>
-        <div className="">
-          <MdOutlineStars />
+
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <MdOutlineStars className="text-xl" />
           <span>Token</span>
         </div>
-        <div className="">
-          <LiaHubspot />
-          <span>dapp</span>
+
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <RiNftFill className="text-xl" />
+          <span>NFTs</span>
         </div>
-        <div className="">
-          <PiJoystickLight />
+
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <LiaHubspot className="text-xl" />
+          <span>Dapp</span>
+        </div>
+
+        <div className="flex gap-3 items-center text-text hover:text-btnBg transition-all duration-300 cursor-pointer">
+          <PiJoystickLight className="text-xl" />
           <span>Games</span>
         </div>
       </div>
