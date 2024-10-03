@@ -4,7 +4,7 @@ import BuyingList from "./BuyingList";
 
 const Card = () => {
   return (
-    <div className="w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center text-center items-center h-screen p-4 mx-auto">
+    <div className="w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center text-center items-center h-screen p-4 mx-auto mt-20 ">
       <h2 className="text-2xl font-bold mb-2">Buying crypto made easy</h2>
       <img
         src={Buy}
