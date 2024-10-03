@@ -17,7 +17,7 @@ const SideBar = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <Link to="/error">
+        <Link to="/">
           <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
             <BsGrid1X2 className="text-xl" />
             <span>Overview</span>
