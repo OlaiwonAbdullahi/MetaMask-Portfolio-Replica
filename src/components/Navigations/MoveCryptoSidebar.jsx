@@ -7,7 +7,7 @@ import { HiArrowPath } from "react-icons/hi2";
 
 const ActionButton = ({ Icon, label }) => {
   return (
-    <div className="flex gap-2 items-center text-text hover:bg-bgColor z-10 rounded-md transition-all duration-300 cursor-pointer p-4 bg-white w-48 sticky top-0 h-scr">
+    <div className="flex gap-2 items-center text-text hover:bg-bgColor z-10 rounded-md transition-all duration-300 cursor-pointer p-4 bg-white w-48 sticky top-0 ">
       <Icon className="text-xl text-text w-6 h-6" />
       <span>{label}</span>
     </div>
