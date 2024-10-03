@@ -9,7 +9,6 @@ import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 const Overview = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
 
-  // Toggle function to pass down
   const handleMoveCryptoClick = () => {
     setShowMoveCryptoSidebar(!showMoveCryptoSidebar);
   };
@@ -17,7 +16,6 @@ const Overview = () => {
   return (
     <div className="flex flex-row gap-4">
       <div className="basis-1/4 md:basis-1/6 flex">
-        {/* Passing the handler and state as props */}
         <SideBar
           showMoveCryptoSidebar={showMoveCryptoSidebar}
           onMoveCryptoClick={handleMoveCryptoClick}

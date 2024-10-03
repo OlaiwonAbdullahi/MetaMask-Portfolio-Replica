@@ -19,7 +19,7 @@ const NavBar = ({ children }) => {
           <IoMdNotificationsOutline className="h-6" />
         </div>
 
-        <Button />
+        <Button>Connect MetaMask</Button>
       </div>
     </div>
   );
