@@ -4,7 +4,7 @@ import NavBar from "../components/Navigations/NavBar";
 
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 
-const Buy = () => {
+const Bridge = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
 
   const handleMoveCryptoClick = () => {
@@ -22,10 +22,10 @@ const Buy = () => {
       </div>
 
       <div className="basis-3/4 md:basis-5/6">
-        <NavBar>Buy</NavBar>
+        <NavBar>Bridge</NavBar>
       </div>
     </div>
   );
 };
 
-export default Buy;
+export default Bridge;
