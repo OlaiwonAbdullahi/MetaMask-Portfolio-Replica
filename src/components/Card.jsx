@@ -1,4 +1,5 @@
 import Buy from "../assets/buyimg.png";
+import Button from "./Button";
 import BuyingList from "./BuyingList";
 
 const Card = () => {
@@ -13,13 +14,16 @@ const Card = () => {
       <h3 className="text-base font-bold mb-2 text-left">
         Buy crypto how you want, when you want with MetaMask
       </h3>
-      <p className="text-sm leading-relaxed mb-4 text-text">
+      <p className="text-sm leading-relaxed mb-4 text-text text-left">
         You're in control when you buy crypto directly in your MetaMask wallet.
         We'll connect you with quotes from trusted providers and guide you along
         the way, making self-custody simple.
       </p>
       <div className="w-full">
         <BuyingList />
+      </div>
+      <div className=" mt-7 ">
+        <Button> Get Started</Button>
       </div>
     </div>
   );
