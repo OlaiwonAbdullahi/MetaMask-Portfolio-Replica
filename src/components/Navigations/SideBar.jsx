@@ -4,12 +4,13 @@ import { MdOutlineStars } from "react-icons/md";
 import { PiJoystickLight } from "react-icons/pi";
 import { LiaHubspot } from "react-icons/lia";
 import { BsGrid1X2 } from "react-icons/bs";
-import { CgGenderMale } from "react-icons/cg";
-import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { RiTokenSwapLine } from "react-icons/ri";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { GoPlus } from "react-icons/go";
 import { FiMinus } from "react-icons/fi";
+import { PiSwapLight } from "react-icons/pi";
 
 const SideBar = () => {
   return (
@@ -27,10 +28,9 @@ const SideBar = () => {
             </div>
           </Link>
           <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
-            <CgGenderMale className="text-xl" />
+            <RiTokenSwapLine className="text-xl" />
             <span className="whitespace-nowrap flex ">
-              Move Crypto
-              <RiTokenSwapLine className=" mt-1" />
+              Move Crypto <MdOutlineKeyboardArrowRight className=" mt-1" />
             </span>
           </div>
 
@@ -81,6 +81,10 @@ function MoveCrypto() {
       <div className="">
         <FiMinus />
         <span>Buy</span>
+      </div>
+      <div className="">
+        <PiSwapLight />
+        <span>Swap</span>
       </div>
     </div>
   );
