@@ -2,6 +2,7 @@ import SideBar from "../components/Navigations/SideBar";
 import Header from "../components/Navigations/Header";
 import Hero from "../components/Hero";
 import Feature from "../components/Feature";
+import Explore from "../components/Explore";
 
 const Overview = () => {
   return (
@@ -14,6 +15,7 @@ const Overview = () => {
         <Header />
         <Hero />
         <Feature />
+        <Explore />
       </div>
     </div>
   );
