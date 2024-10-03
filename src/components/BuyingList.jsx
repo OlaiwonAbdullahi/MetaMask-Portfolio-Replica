@@ -4,7 +4,7 @@ const BuyingList = () => {
   return (
     <div>
       <ul>
-        <li className="flex">
+        <li className="flex text-text">
           <CgCheck className="w-6 h-6" />
           Access to hundreds of tokens on 15+ chains
         </li>
