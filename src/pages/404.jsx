@@ -1,4 +1,6 @@
 import { TiFlagOutline } from "react-icons/ti";
+import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
@@ -15,9 +17,11 @@ const Error = () => {
           Don&apos;t worry, our team is already on it.Please try refreshing the
           page or come back later.
         </div>
-        <button color="gray" className="w-full px-4 md:w-[8rem]">
-          back home
-        </button>
+        <Link to="/">
+          <div className=" flex  justify-center">
+            <Button> Go Back Home </Button>
+          </div>
+        </Link>
       </div>
     </div>
   );

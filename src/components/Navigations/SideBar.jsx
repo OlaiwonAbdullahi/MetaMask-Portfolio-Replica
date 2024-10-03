@@ -75,7 +75,7 @@ const SideBar = ({ onMoveCryptoClick, showMoveCryptoSidebar }) => {
             aria-label="Dapp"
           >
             <LiaHubspot className="text-xl" />
-            <span>Dapp</span>
+            <span>Dapps</span>
           </div>
         </Link>
 
