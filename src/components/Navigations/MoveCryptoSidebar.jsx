@@ -5,6 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { FiArrowDownLeft } from "react-icons/fi";
 import { GoLink } from "react-icons/go";
 import { PiPlantLight } from "react-icons/pi";
+import { VscLoading } from "react-icons/vsc";
 
 import { HiArrowPath } from "react-icons/hi2";
 export default function MoveCrypto() {
@@ -24,7 +25,7 @@ export default function MoveCrypto() {
         <span>Swap</span>
       </div>
       <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
-        <PiSwapLight />
+        <VscLoading />
         <span>Bridge</span>
       </div>
       <div className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer">
