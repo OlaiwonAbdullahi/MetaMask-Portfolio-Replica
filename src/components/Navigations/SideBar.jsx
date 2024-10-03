@@ -8,6 +8,11 @@ import { RiTokenSwapLine } from "react-icons/ri";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
+const handleMoveCryptoClick = () => {
+  const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
+
+  setShowMoveCryptoSidebar(!showMoveCryptoSidebar);
+};
 const SideBar = () => {
   return (
     <div className="p-4 bg-white w-48 sticky top-0 h-screen flex flex-col justify-between">
@@ -25,7 +30,7 @@ const SideBar = () => {
             <span>Overview</span>
           </div>
         </Link>
-        <button>
+        <button onClick={handleMoveCryptoClick}>
           <div
             className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer"
             aria-label="Move Crypto"
