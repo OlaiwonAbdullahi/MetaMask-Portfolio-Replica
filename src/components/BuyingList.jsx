@@ -4,11 +4,18 @@ const BuyingList = () => {
   return (
     <div>
       <ul>
-        <li>
-          <CgCheck />
-          Get up-to-the-minute quotes from trusted providers!
+        <li className="flex">
+          <CgCheck className="w-6 h-6" />
+          Access to hundreds of tokens on 15+ chains
         </li>
-        <li>We &apos;re here to guide you along the way.</li>
+        <li className="flex">
+          <CgCheck className="w-6 h-6" />
+          Instantly fund your wallet with secure payment options
+        </li>
+        <li className="flex">
+          <CgCheck className="w-6 h-6" />
+          Save on gas fees (and time)!
+        </li>
       </ul>
     </div>
   );
