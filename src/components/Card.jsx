@@ -4,14 +4,14 @@ import BuyingList from "./BuyingList";
 
 const Card = () => {
   return (
-    <div className="w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center text-center items-center h-screen p-4 mx-auto mt-20 ">
-      <h2 className="text-2xl font-bold mb-2">Buying crypto made easy</h2>
+    <div className="w-full gap-3 sm:w-3/4 md:w-1/2 flex flex-col justify-center text-center items-center h-screen pt-4 p-4 mx-auto mt-20 bg-white rounded-xl border border-secondary ">
+      <h2 className="text-2xl font-bold mt-3">Buying crypto made easy</h2>
       <img
         src={Buy}
         alt="Buying cryptocurrency illustration"
-        className="mb-4 w-4/5"
+        className=" w-2/3"
       />
-      <h3 className="text-base font-bold mb-2 text-left">
+      <h3 className="text-base font-bold text-left">
         Buy crypto how you want, when you want with MetaMask
       </h3>
       <p className="text-sm leading-relaxed mb-4 text-text text-left">
@@ -22,7 +22,7 @@ const Card = () => {
       <div className="w-full">
         <BuyingList />
       </div>
-      <div className=" mt-7 ">
+      <div className="">
         <Button> Get Started</Button>
       </div>
     </div>
