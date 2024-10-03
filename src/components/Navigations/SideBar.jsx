@@ -8,9 +8,7 @@ import { RiTokenSwapLine } from "react-icons/ri";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { GoPlus } from "react-icons/go";
-import { FiMinus } from "react-icons/fi";
-import { PiSwapLight } from "react-icons/pi";
+import MoveCrypto from "./MoveCryptoSidebar.jsx";
 
 const SideBar = () => {
   return (
@@ -63,29 +61,8 @@ const SideBar = () => {
           </span>
         </div>
       </div>
-
-      <MoveCrypto />
     </div>
   );
 };
 
 export default SideBar;
-
-function MoveCrypto() {
-  return (
-    <div className="">
-      <div className="">
-        <GoPlus />
-        <span>Buy</span>
-      </div>
-      <div className="">
-        <FiMinus />
-        <span>Buy</span>
-      </div>
-      <div className="">
-        <PiSwapLight />
-        <span>Swap</span>
-      </div>
-    </div>
-  );
-}
