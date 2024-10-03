@@ -1,10 +1,11 @@
 import { useState } from "react";
-import SideBar from "../components/Navigations/SideBar";
-import NavBar from "../components/Navigations/NavBar";
+//import SideBar from "../components/Navigations/SideBar";
+import NavBar from "../../components/Navigations/NavBar";
 
-import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
+import MoveCrypto from "../../components/Navigations/MoveCryptoSidebar";
+import SideBar from "../../components/Navigations/SideBar";
 
-const Bridge = () => {
+const BridgePage = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
 
   const handleMoveCryptoClick = () => {
@@ -28,4 +29,4 @@ const Bridge = () => {
   );
 };
 
-export default Bridge;
+export default BridgePage;
