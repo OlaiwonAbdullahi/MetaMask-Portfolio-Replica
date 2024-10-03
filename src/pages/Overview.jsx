@@ -3,6 +3,7 @@ import Header from "../components/Navigations/Header";
 import Hero from "../components/Hero";
 import Feature from "../components/Feature";
 import Explore from "../components/Explore";
+import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 
 const Overview = () => {
   return (
@@ -16,6 +17,7 @@ const Overview = () => {
         <Hero />
         <Feature />
         <Explore />
+        <MoveCrypto />
       </div>
     </div>
   );
