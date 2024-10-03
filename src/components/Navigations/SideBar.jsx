@@ -26,9 +26,20 @@ const SideBar = ({ onMoveCryptoClick, showMoveCryptoSidebar }) => {
           </div>
         </Link>
 
-        <button onClick={onMoveCryptoClick}>
+        <button
+          onClick={onMoveCryptoClick}
+          className={
+            showMoveCryptoSidebar
+              ? " border-r-2 border-r-btnBg text-btnBg "
+              : ""
+          }
+        >
           <div
-            className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer"
+            className={
+              showMoveCryptoSidebar
+                ? "flex gap-2 items-center  hover:bg-bgColor w-40 p-2  transition-all duration-300 cursor-pointer border-r-2 border-r-btnBg text-btnBg "
+                : "flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer"
+            }
             aria-label="Move Crypto"
           >
             <RiTokenSwapLine className="text-xl" />
