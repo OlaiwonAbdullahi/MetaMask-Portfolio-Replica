@@ -25,8 +25,7 @@ const SideBar = () => {
             <span>Overview</span>
           </div>
         </Link>
-
-        <Link to="/move-crypto">
+        <button>
           <div
             className="flex gap-2 items-center text-text hover:bg-bgColor w-40 p-2 rounded-md transition-all duration-300 cursor-pointer"
             aria-label="Move Crypto"
@@ -36,7 +35,7 @@ const SideBar = () => {
               Move Crypto <MdOutlineKeyboardArrowRight className="mt-1" />
             </span>
           </div>
-        </Link>
+        </button>
 
         <Link to="/tokens">
           <div
