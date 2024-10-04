@@ -1,13 +1,9 @@
+import CoinSelect from "./CoinSelect";
+
 const SwapCard = () => {
   return (
-    <div>
-      <select className="w-56">
-        <option value="">Etherium</option>
-        <option value="">Etherium</option>
-        <option value="">Etherium</option>
-        <option value="">Etherium</option>
-        <option value="">Etherium</option>
-      </select>
+    <div className="w-1/2 flex flex-col justify-center items-center">
+      <CoinSelect />
     </div>
   );
 };
