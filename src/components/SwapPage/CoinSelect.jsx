@@ -23,7 +23,7 @@ const CoinSelect = () => {
     setIsOpen(!isOpen); // Toggle dropdown visibility
   };
   return (
-    <div className="relative w-2/3">
+    <div className="relative w-full ">
       <button
         onClick={toggleDropdown}
         className="w-full flex items-center justify-between gap-3 border border-text rounded-full h-14"

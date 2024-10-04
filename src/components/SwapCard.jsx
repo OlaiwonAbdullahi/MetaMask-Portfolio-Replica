@@ -4,11 +4,11 @@ import { LuArrowDownUp } from "react-icons/lu";
 
 const SwapCard = () => {
   return (
-    <div className="w-1/2 flex flex-col justify-center items-center">
+    <div className="w-1/3 flex flex-col justify-center items-center p-4 gap-4">
       <CoinSelect />
-      <span>
-        <LuArrowDownUp className="text-base font-bold text-end" />
-      </span>
+      <div className="w-full flex justify-end">
+        <LuArrowDownUp className="text-2xl text-text font-bold" />
+      </div>
       <span className="text-base font-bold self-start">Swap from</span>
       <SwapFrom />
     </div>
