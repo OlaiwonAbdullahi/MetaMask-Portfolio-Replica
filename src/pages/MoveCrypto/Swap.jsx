@@ -3,6 +3,7 @@ import SideBar from "../../components/Navigations/SideBar";
 import NavBar from "../../components/Navigations/NavBar";
 
 import MoveCrypto from "../../components/Navigations/MoveCryptoSidebar";
+import SwapCard from "../../components/SwapCard";
 
 const Swap = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -23,6 +24,7 @@ const Swap = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Swap</NavBar>
+        <SwapCard />
       </div>
     </div>
   );
