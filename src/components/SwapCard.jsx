@@ -1,6 +1,7 @@
 import CoinSelect from "./SwapPage/CoinSelect";
 import SwapFrom from "./SwapPage/SwapFrom";
 import { LuArrowDownUp } from "react-icons/lu";
+import SwapTo from "./SwapPage/SwapTo";
 
 const SwapCard = () => {
   return (
@@ -11,6 +12,8 @@ const SwapCard = () => {
       </div>
       <span className="text-base font-bold self-start">Swap from</span>
       <SwapFrom />
+      <span className="text-base font-bold self-start">Swap to</span>
+      <SwapTo />
     </div>
   );
 };
