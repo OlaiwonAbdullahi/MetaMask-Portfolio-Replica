@@ -24,7 +24,9 @@ const Swap = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Swap</NavBar>
-        <SwapCard />
+        <div className=" flex flex-col justify-center items-center">
+          <SwapCard />
+        </div>
       </div>
     </div>
   );
