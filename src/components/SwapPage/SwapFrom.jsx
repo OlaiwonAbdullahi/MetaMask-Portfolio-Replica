@@ -13,11 +13,13 @@ const SwapFrom = () => {
     <div className="border border-text rounded-lg flex items-center w-full">
       <button
         onClick={openSearch}
-        className="border-r-2 border-r-text w-40 flex justify-between p-4 font-medium text-xl items-center"
+        className="border-r-2 border-r-text w-40 flex flex-col justify-between p-4 font-medium text-xl items-center"
       >
-        <FaEthereum className="w-8 h-8 text-black" />
-        ETH <RxCaretDown className="w-8 h-8 text-text" />
-        {showSearch && <TokenSearch />}
+        <div className=" flex gap-3">
+          <FaEthereum className="w-8 h-8 text-black" />
+          ETH <RxCaretDown className="w-8 h-8 text-text" />
+        </div>
+        <div className="">{showSearch && <TokenSearch />}</div>
       </button>
       <div className="w-40">
         <input
