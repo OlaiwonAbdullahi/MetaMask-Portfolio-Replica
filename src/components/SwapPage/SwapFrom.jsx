@@ -1,8 +1,14 @@
 import { FaEthereum } from "react-icons/fa";
 import { RxCaretDown } from "react-icons/rx";
 import Search from "../Search";
+import { useState } from "react";
 
 const SwapFrom = () => {
+  const [showSearch, setShowSearch] = useState(false);
+
+  const openSearch = () => {
+    setShowSearch(!showSearch);
+  };
   return (
     <div className="border border-text rounded-lg flex items-center w-full">
       <button
@@ -11,7 +17,7 @@ const SwapFrom = () => {
       >
         <FaEthereum className="w-8 h-8 text-black" />
         ETH <RxCaretDown className="w-8 h-8 text-text" />
-        <Search />
+        {showSearch && <Search />}
       </button>
       <div className="w-40">
         <input
