@@ -1,9 +1,10 @@
 import { useState } from "react";
 //import SideBar from "../components/Navigations/SideBar";
-import NavBar from "../../components/Navigations/NavBar";
+import NavBar from "../components/Navigations/NavBar";
 
-import MoveCrypto from "../../components/Navigations/MoveCryptoSidebar";
-import SideBar from "../../components/Navigations/SideBar";
+import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
+import SideBar from "../components/Navigations/SideBar";
+import BridgeCArd from "../components/BridgeCArd";
 
 const BridgePage = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -24,6 +25,7 @@ const BridgePage = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Bridge</NavBar>
+        <BridgeCArd />
       </div>
     </div>
   );

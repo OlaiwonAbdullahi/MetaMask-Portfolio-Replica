@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { RxCaretDown } from "react-icons/rx";
 import TokenSearch from "../TokenSearch";
-const SwapTo = () => {
+const SwapTo = ({ children }) => {
   const [showSearch, setShowSearch] = useState(false);
 
   const openSearch = () => {
@@ -19,7 +19,7 @@ const SwapTo = () => {
           alt=""
           className="h-10 w-10 rounded-full"
         />
-        <span className="mt-2 whitespace-nowrap"> Select a token</span>
+        <span className="mt-2 whitespace-nowrap"> {children}</span>
 
         <RxCaretDown className="h-6 w-6 mt-2" />
       </div>

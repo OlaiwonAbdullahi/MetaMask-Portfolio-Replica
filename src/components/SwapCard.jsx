@@ -23,7 +23,7 @@ const SwapCard = () => {
       <span className="text-base font-bold self-start">Swap from</span>
       <SwapFrom />
       <span className="text-base font-bold self-start">Swap to</span>
-      <SwapTo />
+      <SwapTo>Select a token</SwapTo>
       <span
         onClick={openSearch}
         className=" flex text-primary font-bold gap2 cursor-pointer"
