@@ -4,17 +4,13 @@ const SellingList = () => {
   return (
     <div>
       <ul className=" flex flex-col gap-3">
-        <li className="flex text-text text-left text-sm">
-          <CgCheck className="w-6 h-6 text-black" />
-          Access to hundreds of tokens on 15+ chains
+        <li className="flex text-text text-left text-sm gap-2">
+          <CgCheck className="w-6 h-6 text-black  bg-secondary rounded-full" />
+          Get up-to-the-minute quotes from trusted providers!
         </li>
-        <li className="flex  text-text text-left text-sm">
-          <CgCheck className="w-6 h-6 text-black" />
-          Instantly fund your wallet with secure payment options
-        </li>
-        <li className="flex  text-text text-left text-sm">
-          <CgCheck className="w-6 h-6 text-black" />
-          Save on gas fees (and time)!
+        <li className="flex  text-text text-left text-sm gap-2">
+          <CgCheck className="w-6 h-6 text-black bg-secondary rounded-full" />
+          We &apos; re here to guide you along the way.
         </li>
       </ul>
     </div>

@@ -13,7 +13,7 @@ const Sell = () => {
   };
 
   return (
-    <div className="flex flex-row gap-4 bg-bgColor">
+    <div className="flex flex-row gap-4 bg-bgColor h-screen">
       <div className="basis-1/4 md:basis-1/6 flex">
         <SideBar
           showMoveCryptoSidebar={showMoveCryptoSidebar}
