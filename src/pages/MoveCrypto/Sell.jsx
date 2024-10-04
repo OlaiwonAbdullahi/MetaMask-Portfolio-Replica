@@ -3,6 +3,7 @@ import SideBar from "../../components/Navigations/SideBar";
 import NavBar from "../../components/Navigations/NavBar";
 
 import MoveCrypto from "../../components/Navigations/MoveCryptoSidebar";
+import SellCard from "../../components/SellCard";
 
 const Sell = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -12,7 +13,7 @@ const Sell = () => {
   };
 
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-4 bg-bgColor">
       <div className="basis-1/4 md:basis-1/6 flex">
         <SideBar
           showMoveCryptoSidebar={showMoveCryptoSidebar}
@@ -23,6 +24,7 @@ const Sell = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Sell</NavBar>
+        <SellCard />
       </div>
     </div>
   );
