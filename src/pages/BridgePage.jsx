@@ -28,10 +28,12 @@ const BridgePage = () => {
         <NavBar>Bridge</NavBar>
         <BridgeCArd />
         <BridgeTotal />
-        <p className=" text-[10px] whitespace-nowrap text-center bg-white">
-          By confirming, you agree to
-          <span className=" text-btnBg">MetaMask&apos;s Terms of Use</span>
-        </p>
+        <div className="  bg-white  w-full max-w-4xl flex justify-center items-center mx-auto rounded-b-md">
+          <p className=" text-[10px] whitespace-nowrap text-center">
+            By confirming, you agree to
+            <span className=" text-btnBg">MetaMask&apos;s Terms of Use</span>
+          </p>
+        </div>
       </div>
     </div>
   );
