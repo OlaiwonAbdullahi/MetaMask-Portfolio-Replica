@@ -2,7 +2,7 @@ import { CiViewList } from "react-icons/ci";
 import { PiSlidersHorizontal } from "react-icons/pi";
 import CoinSelect from "./SwapPage/CoinSelect";
 import SwapTo from "./SwapPage/SwapTo";
-import { LuArrowDownUp } from "react-icons/lu";
+import { GoArrowSwitch } from "react-icons/go";
 
 const BridgeCArd = () => {
   return (
@@ -34,13 +34,10 @@ const BridgeCArd = () => {
           <SwapTo>Select a token</SwapTo>
         </div>
       </div>
-
-      {/* Swap Direction Arrow */}
       <div className="my-4">
-        <LuArrowDownUp className="text-3xl text-text font-bold" />
+        <GoArrowSwitch className="text-3xl text-text font-bold" />
       </div>
 
-      {/* Receive Section */}
       <div className="w-full flex flex-col md:flex-row justify-between gap-4">
         <div className="basis-full md:basis-1/2">
           <span className="text-sm font-semibold">To This Network</span>

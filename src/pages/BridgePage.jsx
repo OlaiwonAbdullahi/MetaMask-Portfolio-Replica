@@ -5,6 +5,7 @@ import NavBar from "../components/Navigations/NavBar";
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
 import BridgeCArd from "../components/BridgeCArd";
+import BridgeTotal from "../components/BridgeTotal";
 
 const BridgePage = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -26,6 +27,11 @@ const BridgePage = () => {
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Bridge</NavBar>
         <BridgeCArd />
+        <BridgeTotal />
+        <p className=" text-[10px] whitespace-nowrap text-center bg-white">
+          By confirming, you agree to
+          <span className=" text-btnBg">MetaMask&apos;s Terms of Use</span>
+        </p>
       </div>
     </div>
   );
