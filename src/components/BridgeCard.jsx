@@ -21,8 +21,9 @@ const BridgeCArd = () => {
         </div>
       </div>
 
-      <div className=" w-1/2">
+      <div className=" w-1/2 flex">
         <span className="text-sm font-semibold">From This Network</span>
+        <br />
         <CoinSelect />
         <span className="text-sm font-semibold">You Send</span>
         <SwapTo>Select a token</SwapTo>
