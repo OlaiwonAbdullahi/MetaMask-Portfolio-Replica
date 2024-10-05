@@ -1,19 +1,17 @@
 import { useState } from "react";
-import { FaEthereum } from "react-icons/fa";
-import { SiOptimism, SiBnbchain, SiPolygon } from "react-icons/si";
+import { SiBinance } from "react-icons/si";
 import { RxCaretDown } from "react-icons/rx";
 import { BsBank } from "react-icons/bs";
+import { TbBrandCoinbase } from "react-icons/tb";
 
 const Exchange = () => {
-  const [selectedNetwork, setSelectedNetwork] = useState("Ethereum");
+  const [selectedNetwork, setSelectedNetwork] = useState("Select An Exchange");
   const [isOpen, setIsOpen] = useState(false);
 
   const networks = [
-    { name: "Ethereum", icon: <BsBank /> },
-    { name: "Ethereum", icon: <FaEthereum /> },
-    { name: "Optimism", icon: <SiOptimism /> },
-    { name: "BNB Chain", icon: <SiBnbchain /> },
-    { name: "Polygon", icon: <SiPolygon /> },
+    { name: "Select An Exchange", icon: <BsBank /> },
+    { name: "Binance", icon: <SiBinance /> },
+    { name: "CoinBase", icon: <TbBrandCoinbase /> },
   ];
 
   const handleSelect = (network) => {
@@ -28,7 +26,7 @@ const Exchange = () => {
     <div className="relative w-full ">
       <button
         onClick={toggleDropdown}
-        className="w-full flex items-center justify-between gap-3 border border-text rounded-full h-14"
+        className="w-full flex items-center justify-between gap-3 border border-text rounded-md h-14"
       >
         <div className=" flex gap-3 p-2">
           <span className="mt-1">

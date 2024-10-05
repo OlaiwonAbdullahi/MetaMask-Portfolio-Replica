@@ -1,13 +1,15 @@
 import { useState } from "react";
 import SendTab from "./SendTab";
+import TransferTab from "./TransferTab";
+import ReceiveTab from "./ReceiveTab";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   const tabs = [
     { id: 1, label: "Send", content: <SendTab /> },
-    { id: 2, label: "Transfer", content: "This is Tab 2 content" },
-    { id: 3, label: "Receive", content: "This is Tab 3 content" },
+    { id: 2, label: "Transfer", content: <TransferTab /> },
+    { id: 3, label: "Receive", content: <ReceiveTab /> },
   ];
 
   return (

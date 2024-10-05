@@ -8,6 +8,7 @@ import Swap from "./pages/MoveCrypto/Swap";
 import Transfer from "./pages/Transfer";
 import Send from "./pages/Send";
 import BridgePage from "./pages/BridgePage";
+import Stake from "./pages/Stake";
 
 export default function App() {
   return (
@@ -20,8 +21,8 @@ export default function App() {
           <Route path="/swap" element={<Swap />} />
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/send" element={<Send />} />
+          <Route path="/stake" element={<Stake />} />
           <Route path="/bridge" element={<BridgePage />} />
-          {/* Wildcard route for 404 error page */}
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
