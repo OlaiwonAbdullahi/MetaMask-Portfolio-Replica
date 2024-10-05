@@ -1,4 +1,6 @@
+import logo from "../assets/metamask-icon.svg";
 import SwapTo from "../components/SwapPage/SwapTo";
+import Button from "./Button";
 const SendTab = () => {
   return (
     <div className=" flex flex-col gap-3">
@@ -20,6 +22,14 @@ const SendTab = () => {
         placeholder="0.00"
         disabled
       />
+      <div className="">
+        <Button>
+          <span className=" flex gap-2 ">
+            <img src={logo} alt="" className=" h-6 w-6" />
+            Connect Wallet
+          </span>
+        </Button>
+      </div>
     </div>
   );
 };
