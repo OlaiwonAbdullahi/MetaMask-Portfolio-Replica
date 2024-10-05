@@ -13,7 +13,7 @@ const Swap = () => {
   };
 
   return (
-    <div className="flex flex-row gap-4 bg-bgColor">
+    <div className="flex flex-row gap-4 ">
       <div className="basis-1/4 md:basis-1/6 flex">
         <SideBar
           showMoveCryptoSidebar={showMoveCryptoSidebar}
@@ -22,7 +22,7 @@ const Swap = () => {
         {showMoveCryptoSidebar && <MoveCrypto />}
       </div>
 
-      <div className="basis-3/4 md:basis-5/6">
+      <div className="basis-3/4 md:basis-5/6 bg-bgColor">
         <NavBar>Swap</NavBar>
         <div className=" flex flex-col justify-center items-center">
           <SwapCard />

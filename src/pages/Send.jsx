@@ -24,7 +24,7 @@ const Send = () => {
         {showMoveCryptoSidebar && <MoveCrypto />}
       </div>
 
-      <div className="basis-3/4 md:basis-5/6">
+      <div className="basis-3/4 md:basis-5/6 bg-bgColor">
         <NavBar>Send</NavBar>
         <Tab />
       </div>
