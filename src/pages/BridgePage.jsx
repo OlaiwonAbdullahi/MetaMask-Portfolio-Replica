@@ -4,7 +4,7 @@ import NavBar from "../components/Navigations/NavBar";
 
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
-import BridgeCard from "../components/BridgeCArd";
+import BridgeCard from "../components/BridgeCard";
 import BridgeTotal from "../components/BridgeTotal";
 
 const BridgePage = () => {
