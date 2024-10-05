@@ -1,9 +1,13 @@
+import { CiCircleQuestion } from "react-icons/ci";
+
 const CardOne = () => {
   return (
     <div>
       <div className="">
         <div className="">Not Connected</div>
-        <div className="">qwerty</div>
+        <div className="">
+          <CiCircleQuestion />
+        </div>
       </div>
       <div className="">
         <span className="text-sm font-bold self-start">Receive To</span>

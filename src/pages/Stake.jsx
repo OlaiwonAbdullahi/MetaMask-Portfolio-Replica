@@ -4,6 +4,7 @@ import NavBar from "../components/Navigations/NavBar";
 
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
+import StalkCard from "../components/StalkCard";
 
 const Stake = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -24,6 +25,7 @@ const Stake = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Stake</NavBar>
+        <StalkCard />
       </div>
     </div>
   );
