@@ -4,7 +4,7 @@ import NavBar from "../components/Navigations/NavBar";
 
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
-import BridgeCArd from "../components/BridgeCArd";
+import BridgeCard from "../components/BridgeCArd";
 import BridgeTotal from "../components/BridgeTotal";
 
 const BridgePage = () => {
@@ -26,7 +26,7 @@ const BridgePage = () => {
 
       <div className="basis-3/4 md:basis-5/6 bg-bgColor">
         <NavBar>Bridge</NavBar>
-        <BridgeCArd />
+        <BridgeCard />
         <BridgeTotal />
         <div className="  bg-white  w-full max-w-4xl flex justify-center items-center mx-auto rounded-b-md">
           <p className=" text-[10px] whitespace-nowrap text-center">

@@ -4,7 +4,7 @@ import CoinSelect from "./SwapPage/CoinSelect";
 import SwapTo from "./SwapPage/SwapTo";
 import { GoArrowSwitch } from "react-icons/go";
 
-const BridgeCArd = () => {
+const BridgeCard = () => {
   return (
     <div className="flex flex-col gap-4 items-center bg-white p-4 sm:p-6 rounded-lg shadow-md w-3/4 max-w-4xl mx-auto mt-10">
       <div className="flex justify-between w-full my-4">
@@ -56,4 +56,4 @@ const BridgeCArd = () => {
   );
 };
 
-export default BridgeCArd;
+export default BridgeCard;
