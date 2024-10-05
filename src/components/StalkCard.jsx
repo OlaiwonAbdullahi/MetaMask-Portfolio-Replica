@@ -1,5 +1,11 @@
+import CardOne from "./StalkPage/Pool/CardOne";
+
 const StalkCard = () => {
-  return <div>StalkCard</div>;
+  return (
+    <div>
+      <CardOne />
+    </div>
+  );
 };
 
 export default StalkCard;
