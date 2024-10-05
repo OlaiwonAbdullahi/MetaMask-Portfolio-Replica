@@ -22,7 +22,7 @@ const SendTab = () => {
         placeholder="0.00"
         disabled
       />
-      <div className="">
+      <div className=" flex justify-center mt-3">
         <Button>
           <span className=" flex gap-2 ">
             <img src={logo} alt="" className=" h-6 w-6" />
