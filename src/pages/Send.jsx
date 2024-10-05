@@ -5,6 +5,7 @@ import { useState } from "react";
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
 import NavBar from "../components/Navigations/NavBar";
+import Tab from "../components/Tab";
 
 const Send = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -25,6 +26,7 @@ const Send = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Send</NavBar>
+        <Tab />
       </div>
     </div>
   );
