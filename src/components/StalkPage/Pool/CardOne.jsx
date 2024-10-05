@@ -1,10 +1,15 @@
 import { CiCircleQuestion } from "react-icons/ci";
+import { GoDotFill } from "react-icons/go";
 
 const CardOne = () => {
   return (
     <div>
       <div className="">
-        <div className="">Not Connected</div>
+        <div className="">
+          {" "}
+          <GoDotFill />
+          Not Connected
+        </div>
         <div className="">
           <CiCircleQuestion />
         </div>
