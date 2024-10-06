@@ -19,7 +19,7 @@ const CardOne = () => {
       </div>
       <div className="">
         <span className="text-sm font-bold self-start">Receive To</span>
-        <div className=" flex border border-text p-2 w-full">
+        <div className=" flex border border-text p-2 w-full rounded-md">
           <div className=" flex">
             <div className="">
               <FaEthereum className="h-6 w-6" />
@@ -28,7 +28,7 @@ const CardOne = () => {
               <input
                 type="text"
                 placeholder=" 0 ETH"
-                className=" focus:outline-none placeholder:text-xl text-xl"
+                className=" focus:outline-none placeholder:text-xl text-xl text-text"
               />
             </div>
           </div>

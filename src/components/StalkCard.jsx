@@ -8,7 +8,7 @@ const StalkCard = () => {
       <div className=" basis-1/4  bg-white p-4 m-4 mt-7 rounded-lg">
         <CardOne />
       </div>
-      <div className=" basis-3/4 flex flex-col gap-4 m-4">
+      <div className=" basis-3/4 flex flex-col gap-4 m-4 mt-7">
         <CardTwo />
         <CardThree />
       </div>
