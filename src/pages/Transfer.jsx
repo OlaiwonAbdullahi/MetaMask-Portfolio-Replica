@@ -4,6 +4,7 @@ import NavBar from "../components/Navigations/NavBar";
 
 import MoveCrypto from "../components/Navigations/MoveCryptoSidebar";
 import SideBar from "../components/Navigations/SideBar";
+import Dropdown from "./DropDown";
 
 const Transfer = () => {
   const [showMoveCryptoSidebar, setShowMoveCryptoSidebar] = useState(false);
@@ -24,6 +25,7 @@ const Transfer = () => {
 
       <div className="basis-3/4 md:basis-5/6">
         <NavBar>Transfer</NavBar>
+        <Dropdown />
       </div>
     </div>
   );
