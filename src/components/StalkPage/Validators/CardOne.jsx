@@ -18,22 +18,32 @@ const CardOne = () => {
         </div>
       </div>
       <div className="">
-        <span className="text-sm font-bold self-start">Receive To</span>
-        <div className=" flex border border-text p-2 w-full rounded-md">
+        <span className="text-sm font-bold self-start">Stake</span>
+        <div className=" flex bg-text p-2 w-full rounded-md">
           <div className=" flex">
             <div className="">
               <FaEthereum className="h-6 w-6" />
             </div>
             <div className="">
-              <input
-                type="text"
-                placeholder=" 0 ETH"
-                className=" focus:outline-none placeholder:text-xl text-xl text-text"
-              />
+              <span className="text-xl font-medium">ETH</span>
+              on Ethereum
             </div>
           </div>
-          <div className=" text-xl text-text">$0.00</div>
+
+          <span className="text-sm font-bold self-start">Amount</span>
+          <div className="">
+            <div className=" flex justify-between">
+              <span>0 ETH</span>
+              <span>≈$0.00</span>
+            </div>
+            <div className="">
+              <span>-</span>
+              <input type="range" />
+              <span>+</span>
+            </div>
+          </div>
         </div>
+
         <div className=" flex gap-2">
           {" "}
           <span className=" text-base text-btnBg font-medium">Max: 0.0000</span>
@@ -54,6 +64,11 @@ const CardOne = () => {
           <span className=" flex gap-2">Est. annual rewards</span>
           <span className=" text-green-700">--</span>
         </div>
+      </div>
+
+      <div className=" flex gap-4 text-black text-sm bg-orange-100 border-l-4 border-l-orange-700 rounded-md p-3">
+        <BiSolidError className=" h-7 w-7 text-orange-700" />
+        <span>Network is busy and gas prices are higher than usual.</span>
       </div>
 
       <div className=" flex justify-center">

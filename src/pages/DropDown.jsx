@@ -17,7 +17,7 @@ const Dropdown = () => {
     <div className="relative w-64 mt-10 mx-auto">
       {/* Dropdown Button */}
       <button
-        onClick={toggleDropdown}
+        onMouseEnter={toggleDropdown}
         className="w-full bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex justify-between items-center"
       >
         {selectedOption}
