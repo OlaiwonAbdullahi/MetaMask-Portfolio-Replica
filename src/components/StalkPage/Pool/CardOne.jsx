@@ -9,8 +9,8 @@ const CardOne = () => {
     <div className="flex flex-col gap-4 bg-white">
       <div className=" flex justify-between">
         <div className=""></div>
-        <div className=" flex p-2 text-sm">
-          <GoDotFill className="text-red-500" />
+        <div className=" flex p-2 text-sm gap-1">
+          <GoDotFill className="text-red-500 mt-1" />
           Not Connected
         </div>
         <div className="">
