@@ -7,8 +7,8 @@ const StalkTab = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   const tabs = [
-    { id: 1, label: "Send", content: <StalkPool /> },
-    { id: 2, label: "Transfer", content: <StalkValidator /> },
+    { id: 1, label: "MetaMask Pool", content: <StalkPool /> },
+    { id: 2, label: "MetaMask Validators", content: <StalkValidator /> },
     { id: 3, label: "Receive", content: <ReceiveTab /> },
   ];
 
