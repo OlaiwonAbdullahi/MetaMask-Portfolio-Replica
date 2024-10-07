@@ -23,7 +23,7 @@ const CardOne = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4 bg-white p-4 rounded-md">
+    <div className="flex flex-col gap-4 bg-white p-2 rounded-md">
       <div className="flex justify-between">
         <div className=""></div>
         <div className="flex p-2 text-sm gap-1">
