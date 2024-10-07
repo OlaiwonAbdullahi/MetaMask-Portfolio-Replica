@@ -10,16 +10,16 @@ const CardOne = () => {
   const [range, setRange] = useState(0);
 
   const handleRangeChange = (e) => {
-    const value = Math.max(0, Math.min(3200, Number(e.target.value))); // Keeps value between 0 and 3200
+    const value = Math.max(0, Math.min(3200, Number(e.target.value)));
     setRange(value);
   };
 
   const decrementRange = () => {
-    setRange((prev) => Math.max(0, prev - 1)); // Ensure it doesn't go below 0
+    setRange((prev) => Math.max(0, prev - 1));
   };
 
   const incrementRange = () => {
-    setRange((prev) => Math.min(3200, prev + 1)); // Ensure it doesn't exceed 3200
+    setRange((prev) => Math.min(3200, prev + 1));
   };
 
   return (
