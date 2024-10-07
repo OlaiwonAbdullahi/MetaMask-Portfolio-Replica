@@ -4,9 +4,12 @@ import { GoDotFill } from "react-icons/go";
 import { CiCircleInfo } from "react-icons/ci";
 import { BiSolidError } from "react-icons/bi";
 import Button from "../../Button";
+import { useState } from "react";
 const CardOne = () => {
+  const [range, setRange] = useState("");
+
   return (
-    <div className="flex flex-col gap-4 bg-white">
+    <div className="flex flex-col gap-4 bg-white p-4 rounded-md">
       <div className=" flex justify-between">
         <div className=""></div>
         <div className=" flex p-2 text-sm gap-1">
@@ -19,29 +22,67 @@ const CardOne = () => {
       </div>
       <div className="">
         <span className="text-sm font-bold self-start">Stake</span>
-        <div className=" flex bg-text p-2 w-full rounded-md">
+        <div className=" flex bg-gray-200 p-2 w-full rounded-md">
           <div className=" flex">
             <div className="">
-              <FaEthereum className="h-6 w-6" />
+              <FaEthereum className="h-10 w-10 mt-2" />
             </div>
             <div className="">
-              <span className="text-xl font-medium">ETH</span>
+              <span className="text-2xl font-medium">ETH</span> <br />
               on Ethereum
             </div>
           </div>
+        </div>
 
-          <span className="text-sm font-bold self-start">Amount</span>
-          <div className="">
-            <div className=" flex justify-between">
-              <span>0 ETH</span>
-              <span>≈$0.00</span>
-            </div>
-            <div className="">
-              <span>-</span>
-              <input type="range" />
-              <span>+</span>
-            </div>
+        <span className="text-sm font-bold self-start">Amount</span>
+        <div className="bg-gray-200 p-2 w-full rounded-md ">
+          <div className="flex justify-between">
+            <span className="text-xl text-text">0 ETH</span>
+            <span className="text-xl text-text">≈$0.00</span>
           </div>
+          <div className="flex items-center space-x-2 justify-around ">
+            <button
+              className="text-4xl text-text"
+              onClick={() => setRange((range) => range - 1)}
+            >
+              -
+            </button>
+            <input
+              type="range"
+              value={range}
+              min={0}
+              max={3200}
+              onChange={(e) => setRange(e.target.value)}
+              className="w-2/3 h-2 rounded-lg appearance-none bg-gray-300"
+              style={{
+                height: "10px",
+                accentColor: "#4A90E2",
+              }}
+            />
+            <button
+              className="text-4xl text-text"
+              onClick={() => setRange((range) => range + 1)}
+            >
+              +
+            </button>
+          </div>
+          <style jsx>{`
+            input[type="range"]::-webkit-slider-thumb {
+              appearance: none;
+              width: 24px; /* Width of the thumb */
+              height: 24px; /* Height of the thumb */
+              border-radius: 50%;
+              background-color: #4a90e2; /* Blue color */
+              cursor: pointer;
+            }
+            input[type="range"]::-moz-range-thumb {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              background-color: #4a90e2;
+              cursor: pointer;
+            }
+          `}</style>
         </div>
 
         <div className=" flex gap-2">
